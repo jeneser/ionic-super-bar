@@ -12,32 +12,22 @@ import { Page1Page } from '../page1/page1';
 export class HomePage {
 
   @ViewChild(Content) content: Content;
+
+  pushPage: any;
   showToolbar:boolean = false;
   articles:Array<any> = new Array(10).fill('');
 
-  pushPage: any;
-
   constructor(public navCtrl: NavController,
               menu: MenuController,
-              public ref: ChangeDetectorRef,) {
+              public ref: ChangeDetectorRef) {
 
     this.pushPage = Page1Page;
-
   }
 
   onScroll($event: any){
-
-      let scrollTop = $event.scrollTop;
-      this.showToolbar = scrollTop >= 120;
-      this.ref.detectChanges();
-
-  }
-
-  swipeEvent($event: any) {
-
-    console.log($event);
-    console.log($event.direction);
-
+    let scrollTop = $event.scrollTop;
+    this.showToolbar = scrollTop >= 120;
+    this.ref.detectChanges();
   }
 
 }

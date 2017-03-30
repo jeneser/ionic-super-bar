@@ -8,21 +8,19 @@ import { NavController, Content } from 'ionic-angular';
 export class Page1Page {
 
   @ViewChild(Content) content: Content;
-  showToolbar:boolean = false;
-  articles:Array<any> = new Array(10).fill('');
 
   pushPage: any;
+  showToolbar:boolean = false;
+  articles:Array<any> = new Array(10).fill('');
 
   constructor(public navCtrl: NavController,
               public ref: ChangeDetectorRef,) {
   }
 
   onScroll($event: any){
-
       let scrollTop = $event.scrollTop;
       this.showToolbar = scrollTop >= 120;
       this.ref.detectChanges();
-
   }
 
 }

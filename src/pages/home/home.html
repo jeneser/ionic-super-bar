@@ -12,23 +12,22 @@
 
 </ion-header>
 
-<ion-content class="content"
-              (ionScroll)="onScroll($event)"
-              (onSwipeUp)="swipeEvent($event)">
+<ion-content class="content" (ionScroll)="onScroll($event)">
 
   <div class="cover header-md">
-    <img src="assets/imgs/home-bg.png" alt="">
+    <img src="assets/imgs/home-bg.png" alt="home-bg">
   </div>
 
   <ion-list>
-    <ion-item *ngFor="let p of articles">
+
+    <ion-item *ngFor="let p of articles" [navPush]="pushPage">
       <ion-avatar item-left>
         <img src="assets/imgs/avatar.png">
       </ion-avatar>
-
       <h2>ionic2-super-bar</h2>
-      <p>ionic2-super-bar ionic2-super-bar</p>
+      <p>Click me to view other demo.</p>
     </ion-item>
+
   </ion-list>
 
 </ion-content>
