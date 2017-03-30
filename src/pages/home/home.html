@@ -1,0 +1,34 @@
+<ion-header [class.opaque]="showToolbar">
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title [hidden]="!showToolbar">
+      ionic2-super-bar
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="content"
+              (ionScroll)="onScroll($event)"
+              (onSwipeUp)="swipeEvent($event)">
+
+  <div class="cover header-md">
+    <img src="assets/imgs/home-bg.png" alt="">
+  </div>
+
+  <ion-list>
+    <ion-item *ngFor="let p of articles">
+      <ion-avatar item-left>
+        <img src="assets/imgs/avatar.png">
+      </ion-avatar>
+
+      <h2>ionic2-super-bar</h2>
+      <p>ionic2-super-bar ionic2-super-bar</p>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

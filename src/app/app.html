@@ -1,0 +1,24 @@
+<ion-menu [content]="content">
+
+  <ion-content class="menu-content">
+
+    <div class="cover header-md mask">
+      <img src="assets/imgs/menu-header.jpg" alt="">
+      <div class="avatar">
+        <img src="assets/imgs/avatar.png">
+        <p>Nice to meet you</p>
+      </div>
+    </div>
+
+    <ion-list>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-icon name="pricetag" item-left></ion-icon>
+        {{p.title}}
+      </button>
+    </ion-list>
+
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
