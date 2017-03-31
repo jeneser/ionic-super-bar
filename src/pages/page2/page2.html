@@ -1,0 +1,15 @@
+<!--
+  Generated template for the Page2 page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content (ionScroll)="onScroll($event)">
+
+  <ion-tabs tabs-only [class.hidden]="!showToolbar">
+    <ion-tab tabTitle="Music" [root]="rootPage"></ion-tab>
+    <ion-tab tabTitle="Movies" [root]="rootPage"></ion-tab>
+    <ion-tab tabTitle="Games" [root]="rootPage"></ion-tab>
+  </ion-tabs>
+
+</ion-content>
