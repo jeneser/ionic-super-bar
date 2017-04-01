@@ -17,7 +17,7 @@ A transparent statusBar and toolBar DEMO in ionic2.
 * Run `ionic platform add android` in a terminal
 * On `MainActivity.java` file on Android platform folder`platforms/android/src/../../MainActivity.java`, paste the following code after super.onCreate()
 ```java
-if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 	getWindow().getDecorView().setSystemUiVisibility(
 	   View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN |
 	   View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
