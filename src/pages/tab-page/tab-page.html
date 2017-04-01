@@ -1,0 +1,34 @@
+<!--
+  Generated template for the TabPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header [class.hidden]="!showToolbar">
+
+  <ion-navbar color="primary" no-border-bottom>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>Scroll to hidden bar</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content fullscreen (ionScroll)="onScroll($event)">
+
+  <ion-list>
+
+    <ion-item *ngFor="let p of articles" [navPush]="pushPage">
+      <ion-avatar item-left>
+        <img src="assets/imgs/avatar.png">
+      </ion-avatar>
+      <h2>ionic2-super-bar</h2>
+      <p>Click me to view other demo.</p>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

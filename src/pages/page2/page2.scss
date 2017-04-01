@@ -1,0 +1,17 @@
+page-page2 {
+
+  ion-header {
+    transition: top 0.5s ease;
+  }
+  .tabbar {
+    transition: bottom 0.5s ease;
+  }
+
+  .hidden {
+    top: -($cordova-md-statusbar-padding + $toolbar-md-height);
+    .tabbar {
+      bottom: -($tabs-ios-tab-min-height);
+    }
+  }
+
+}
