@@ -11,13 +11,13 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content class="content" (ionScroll)="onScroll($event)">
+<ion-content (ionScroll)="onScroll($event)">
   <!--These contents will appear below the status bar-->
   <div class="cover header-md">
-    <img class="cover" src="assets/imgs/home-bg.png" alt="home-bg">
+    <img class="cover" src="assets/img/cover_home.png" alt="home">
   </div>
   <!--Some Languages list-->
-  <ion-list>
+  <ion-list margin-top>
     <button ion-item *ngFor="let item of items" (click)="openNavDetailsPage(item)" icon-start>
       <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}" item-start></ion-icon>
       {{ item.title }}

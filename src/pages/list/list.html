@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -8,9 +8,9 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <ion-list margin-top>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-left></ion-icon>
+      <ion-icon [name]="item.icon" color="primary" item-left></ion-icon>
       {{item.title}}
       <div class="item-note" item-right>
         {{item.note}}

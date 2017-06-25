@@ -1,7 +1,7 @@
 import { Component, ChangeDetectorRef } from '@angular/core';
 import { NavController, MenuController } from 'ionic-angular';
 
-import { ListPage } from '../list/list';
+import { LanguageDetailsPage } from '../language-details/language-details';
 
 @Component({
   selector: 'page-home',
@@ -24,7 +24,7 @@ export class HomePage {
   }
 
   openNavDetailsPage(item) {
-    this.nav.push(ListPage, { item: item });
+    this.nav.push(LanguageDetailsPage, { item: item });
   }
 
   getItems() {

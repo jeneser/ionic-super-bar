@@ -1,41 +1,21 @@
-<!--<ion-menu [content]="content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <ion-content>
-    <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
-    </ion-list>
-  </ion-content>
-
-</ion-menu>-->
-
 <ion-menu [content]="content">
-
   <ion-content class="menu-content">
-
-    <div class="cover header-md mask">
-      <img src="assets/imgs/menu-header.jpg" alt="menu-header">
+    <!--Cover and avatar-->
+    <div class="cover header-md mask" margin-bottom>
+      <img src="assets/img/cover_menu_header.jpg" alt="menu-header">
       <div class="avatar">
-        <img src="assets/imgs/avatar.png">
+        <img src="assets/img/avatar.png">
         <p>Nice to meet you</p>
       </div>
     </div>
-
+    <!--Menu list-->
     <ion-list>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        <ion-icon name="pricetag" item-left></ion-icon>
+        <ion-icon [name]="p.icon" item-left></ion-icon>
         {{p.title}}
       </button>
     </ion-list>
-
   </ion-content>
-
 </ion-menu>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
