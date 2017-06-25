@@ -1,33 +1,26 @@
 <ion-header [class.opaque]="showToolbar">
-
+  <!--Navbar-->
   <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-
+    <!--Toggle title-->
     <ion-title [hidden]="!showToolbar">
-      ionic2-super-bar
+      Superbar
     </ion-title>
   </ion-navbar>
-
 </ion-header>
 
 <ion-content class="content" (ionScroll)="onScroll($event)">
-
+  <!--These contents will appear below the status bar-->
   <div class="cover header-md">
-    <img src="assets/imgs/home-bg.png" alt="home-bg">
+    <img class="cover" src="assets/imgs/home-bg.png" alt="home-bg">
   </div>
-
+  <!--Some Languages list-->
   <ion-list>
-
-    <ion-item *ngFor="let p of articles" [navPush]="pushPage">
-      <ion-avatar item-left>
-        <img src="assets/imgs/avatar.png">
-      </ion-avatar>
-      <h2>ionic2-super-bar</h2>
-      <p>Click me to view other demo.</p>
-    </ion-item>
-
+    <button ion-item *ngFor="let item of items" (click)="openNavDetailsPage(item)" icon-start>
+      <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}" item-start></ion-icon>
+      {{ item.title }}
+    </button>
   </ion-list>
-
 </ion-content>

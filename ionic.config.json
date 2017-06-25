@@ -1,6 +1,5 @@
 {
-  "name": "HPU+",
-  "app_id": "com.jeneser.hpunews",
-  "v2": true,
-  "typescript": true
+  "name": "ionic-super-bar",
+  "app_id": "wang.jeneser.superbar",
+  "type": "ionic-angular"
 }
