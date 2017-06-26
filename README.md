@@ -1,15 +1,24 @@
+<p align="center">
+  <img src="logo.png" />
+</p>
 
-A transparent statusBar and toolBar DEMO in ionic.
+<p align="center">
+	<b>Transparent statusBar and awesome toolBar DEMO in ionic.</b>
+</p>
 
-|Android 4.x|Android 5.0+|iOS|
-|:-:|:-:|:-:|
-|![build faill](https://img.shields.io/badge/support-failing-orange.svg)|![build passing](https://img.shields.io/badge/support-passing-brightgreen.svg)|![build passing](https://img.shields.io/badge/support-passing-brightgreen.svg)|
+<p align="center">
+  <img src="support_info.png" />
+</p>
 
 <br>
 <p align="center">
   <img src="screenshot.gif" />
 </p>
 <br>
+
+|Android 4.x|Android 5.0+|iOS|Ionic2|Ionic3+|
+|:-:|:-:|:-:|:-:|:-:|
+|![build faill](https://img.shields.io/badge/support-failing-orange.svg)|![build passing](https://img.shields.io/badge/support-passing-brightgreen.svg)|![build passing](https://img.shields.io/badge/support-passing-brightgreen.svg)|![build passing](https://img.shields.io/badge/support-passing-brightgreen.svg)|![build passing](https://img.shields.io/badge/support-passing-brightgreen.svg)|
 
 ## Get started
 
@@ -56,7 +65,7 @@ import android.view.View;
 │   │   ├── app.component.ts
 │   │   ├── app.html
 │   │   ├── app.module.ts
-│   │   ├── app.scss				    * transparent statusBar and SuperBar
+│   │   ├── app.scss                  * transparent statusBar and SuperBar
 │   │   └── main.ts
 │   ├── assets
 │   │   ├── icon
@@ -64,11 +73,11 @@ import android.view.View;
 │   ├── index.html
 │   ├── manifest.json
 │   ├── pages
-│   │   ├── home				        * transparent statusBar and SuperBar page
+│   │   ├── home                      * transparent statusBar and SuperBar page
 │   │   │   ├── home.html
 │   │   │   ├── home.scss
 │   │   │   └── home.ts
-│   │   ├── language-details			* transparent statusBar and SuperBar page
+│   │   ├── language-details          * transparent statusBar and SuperBar page
 │   │   │   ├── language-details.html
 │   │   │   ├── language-details.scss
 │   │   │   └── language-details.ts
