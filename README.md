@@ -16,10 +16,6 @@
 </p>
 <br>
 
-|Android 4.x|Android 5.0+|iOS|Ionic2|Ionic3+|
-|:-:|:-:|:-:|:-:|:-:|
-|![build faill](https://img.shields.io/badge/support-failing-orange.svg)|![build passing](https://img.shields.io/badge/support-passing-brightgreen.svg)|![build passing](https://img.shields.io/badge/support-passing-brightgreen.svg)|![build passing](https://img.shields.io/badge/support-passing-brightgreen.svg)|![build passing](https://img.shields.io/badge/support-passing-brightgreen.svg)|
-
 ## Get started
 
 * Clone this repository:  `git@github.com:jeneser/ionic-super-bar.git`
@@ -118,3 +114,27 @@ System:
     ios-sim    : not installed
     npm        : 3.10.10 
 ```
+
+## ChangeLog
+
+- June 25, 2017:
+  - Upgrade this project to Ionic 3 Fix issue#12
+  - Rename repertory: `ionic-super-bar`
+  - Move ionic2 version to branch `dev-ionic2-v1`
+ 
+## Contribute
+
+Please make sure to read the [Contributing Guide](https://github.com/jeneser/ionic-super-bar/blob/master/CONTRIBUTING.md) before making a pull request.
+
+```bash
+# install dependencies
+npm install
+
+# serve with hot reload
+ionic serve
+
+```
+
+## License
+
+[MIT](https://github.com/jeneser/ionic-super-bar/blob/master/LICENSE) Copyright (c) 2017 Jeneser
