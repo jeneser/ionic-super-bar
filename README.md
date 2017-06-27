@@ -24,7 +24,7 @@
 
 ## Transparent statusBar for android
 
-* Run `ionic platform add android` in a terminal
+* Run `ionic cordova platform add android` in a terminal
 * On `MainActivity.java` file on Android platform folder`platforms/android/src/../../MainActivity.java`, paste the following code after super.onCreate()
 
 ```java
