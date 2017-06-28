@@ -42,7 +42,19 @@ import android.os.Build;
 import android.view.View;
 ```
 
-* Last set `StatusBarBackgroundColor` in `config.xml`from the project root.
+* Last set `StatusBarBackgroundColor` in `app.component.ts` from the project folder `src/app/app.component.ts`. 
+If you want use this option for Android and native status bar plugin for iOS devices on the same project. We advise you to do so. The code is harmless!
+
+```javascript
+// #AARRGGBB where AA is an alpha value
+if (this.platform.is('android')) {
+	this.statusBar.backgroundColorByHexString("#33000000");
+}
+```
+
+* In the same way. You can set `StatusBarBackgroundColor` in `config.xml` from the project root.
+But, When you build an Ionic project for IOS platform. You may need to remove it.
+
 ```
 <preference name="StatusBarBackgroundColor" value="#33000000"/>
 ```
@@ -61,7 +73,7 @@ import android.view.View;
 │   │   ├── app.component.ts
 │   │   ├── app.html
 │   │   ├── app.module.ts
-│   │   ├── app.scss                  * transparent statusBar and SuperBar
+│   │   ├── app.scss                  * transparent statusBar and SuperBar style
 │   │   └── main.ts
 │   ├── assets
 │   │   ├── icon
@@ -117,6 +129,10 @@ System:
 
 ## ChangeLog
 
+- June 28, 2017:
+  - PR #14 Platform separately:
+  - Each platform does not affect each other
+  - Make code harmless
 - June 25, 2017:
   - Upgrade this project to Ionic 3 Fix issue#12
   - Rename repertory: `ionic-super-bar`
