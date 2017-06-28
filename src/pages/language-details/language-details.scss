@@ -1,11 +1,3 @@
 page-language-details {
 
-  // Extend super bar placeholder
-  @extend %super-bar;
-
-  // Other custom Sass
-  .content {
-    background-color: color($colors, light);
-  }
-
 }

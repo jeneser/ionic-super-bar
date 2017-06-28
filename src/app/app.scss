@@ -1,6 +1,9 @@
 // App Global Sass
 // --------------------------------------------------
 
+// Transparent status bar and awesome tool bar style
+// --------------------------------------------------
+
 // Feat android transparent status bar
 // Set padding-top and default bg-color for status bar
 
@@ -14,6 +17,7 @@
 }
 
 // Super bar placeholder
+// Work in tool bar with transparent status bar
 
 %super-bar {
   .scroll-content {
@@ -42,7 +46,16 @@
   }
 }
 
+// Extend super bar placeholder for android
+
+.platform-android {
+  page-home, page-language-details {
+    @extend %super-bar;
+  }
+}
+
 // Other custom Sass
+// You don't have to care about it
 // --------------------------------------------------
 
 .menu-content {
