@@ -53,7 +53,7 @@ if (this.platform.is('android')) {
 ```
 
 * In the same way. You can set `StatusBarBackgroundColor` in `config.xml` from the project root.
-But, When you build an Ionic project for IOS platform. You may need to remove it.
+But, When you build an Ionic project for IOS platform. You may need to remove it. Pick one you like.
 
 ```
 <preference name="StatusBarBackgroundColor" value="#33000000"/>
