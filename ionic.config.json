@@ -1,5 +1,8 @@
 {
   "name": "ionic-super-bar",
   "app_id": "wang.jeneser.superbar",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }
