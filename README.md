@@ -29,9 +29,7 @@
 
 ```java
 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-	getWindow().getDecorView().setSystemUiVisibility(
-	   View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN |
-	   View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+   getWindow().getDecorView().setSystemUiVisibility(LayoutParams.FLAG_TRANSLUCENT_STATUS);
 }
 ```
 
@@ -40,6 +38,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 ```java
 import android.os.Build;
 import android.view.View;
+import android.view.WindowManager.LayoutParams;
 ```
 
 * Last set `StatusBarBackgroundColor` in `app.component.ts` from the project folder `src/app/app.component.ts`. 
