@@ -128,6 +128,9 @@ System:
 
 ## ChangeLog
 
+- December 26, 2017:
+  - Update documentation to fix issue#18
+  - [Fixed By Jayser M.](https://github.com/jayserdny)
 - June 28, 2017:
   - PR #14 Platform separately:
   - Each platform does not affect each other
