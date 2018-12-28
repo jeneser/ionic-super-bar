@@ -25,7 +25,7 @@
 ## Transparent statusBar for android
 
 * Run `ionic cordova platform add android` in a terminal
-* On `MainActivity.java` file on Android platform folder`platforms/android/src/../../MainActivity.java`, paste the following code after super.onCreate()
+* Just for your information, a hook execute the script `update-main-activity.sh` that copy the `MainActivity.java` (custom) file to Android platform folder `platforms/android/src/../../MainActivity.java`, with the native code: 
 
 ```java
 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -33,13 +33,6 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 	   View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN |
 	   View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
 }
-```
-
-* Remember to add these packages in MainActivity.java
-
-```java
-import android.os.Build;
-import android.view.View;
 ```
 
 * Last set `StatusBarBackgroundColor` in `app.component.ts` from the project folder `src/app/app.component.ts`. 
