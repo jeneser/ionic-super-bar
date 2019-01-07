@@ -122,6 +122,8 @@ System:
 
 ## ChangeLog
 
+- January 07, 2019:
+  - Fixed issue with input behind keyboard
 - June 28, 2017:
   - PR #14 Platform separately:
   - Each platform does not affect each other
